@@ -197,16 +197,6 @@ require("lazy").setup({
         })
       end
     },
-    { "github/copilot.vim" },
-    {
-      "CopilotC-Nvim/CopilotChat.nvim",
-      dependencies = {
-        { "github/copilot.vim" },
-        { "nvim-lua/plenary.nvim", branch = "master" }, -- for curl, log and async functions
-      },
-      opts = {
-      },
-    },
     {
       "tpope/vim-fugitive",
       keys = { { "<leader>gg", ":tab G<cr>" } },
@@ -348,6 +338,7 @@ require("lazy").setup({
           jsonls = {},
           lua_ls = {},
           nixd = {},
+          ts_ls = {},
           terraformls = {},
           yamlls = {},
           zls = {},
